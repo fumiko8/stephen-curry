@@ -1,0 +1,21 @@
+.video {
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Comfortaa-Medium";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Comfortaa-Medium"),
+         /* Если не получилось, загрузит woff2 */
+         url("/") ,
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/font/Comfortaa-Medium.woff") format("woff");
+  }
+  
+  /* Теперь можно использовать шрифт */
+  body {
+    font-family: "Comfortaa-Medium", "Arial", sans-serif;
+  }
